@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- taken from https://github.com/niinpatel/calendarHTML-Javascript -->
+        <meta charset="UTF-8">
+        <title>Calendar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calendar">
+                <h3 id="monthAndYear"></h3>
+                <table class="table table-bordered table-responsive-sm" id="calendar">
+                    <thead>
+                    <tr>
+                        <th>Lun</th><th>Mar</th><th>Mie</th><th>Jue</th><th>Vie</th><th>Sab</th><th>Dom</th>
+                    </tr>
+                    </thead>
+                    <tbody id="calendar-body"></tbody>
+                </table>
+
+                <div class="datejumper">
+                    <button class="prevnextbutton" id="previous" onclick="previous()">Ant</button>
+                    <button class="prevnextbutton" id="next" onclick="next()">Sig</button>
+                </div>
+                <form class="datejumper">
+                    <label class="lead mr-2 ml-2" for="month">Cambiar a: </label>
+                    <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                        <option value=0>Ene</option><option value=1>Feb</option><option value=2>Mar</option><option value=3>Abr</option><option value=4>May</option><option value=5>Jun</option><option value=6>Jul</option><option value=7>Ago</option><option value=8>Sep</option><option value=9>Oct</option><option value=10>Nov</option><option value=11>Dic</option>
+                    </select>
+                    <input class="form-control col-sm-4" type="text" name="year" id="year" onchange="jump()" onkeydown="if (event.keyCode == 13) return false;">
+                    <button class="todaybutton" onclick="todayMonth()">Hoy</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
