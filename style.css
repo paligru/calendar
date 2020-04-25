@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     font-family: 'Asap';font-size: 22px; background: white;
 }
@@ -76,83 +75,4 @@ input[type=text],select {
     margin-left: 20%;
     width: 75%;
 }
-=======
-body {
-    font-family: 'Asap';font-size: 22px; background: white;
-}
-.container{
-    margin-top: .8em;
-}
-.calendar{
-    margin: .2em;
-    border-style:solid; border-width:1px; border-top-left-radius: 15px;border-top-right-radius: 15px; border-color:silver; width:100%;
-}
-h3 {
-    background: silver; text-align:center; padding:.5em;margin-top:-1px;border-top-left-radius: 15px;border-top-right-radius: 15px;
- }
-
- table { border-collapse: collapse;border-spacing: 0; width:100%;table-layout: fixed;}
- .blankcell {height:3.7em;width:5em;background:#EAEAEA;overflow: hidden;}
- .filledcell {height:3.7em;width:5em;overflow:hidden;}
- .today {background:pink;}
- th, td {
-  border: 1px solid silver; overflow: hidden; padding:.3em;
-}
-
-.prevnextbutton {
-    box-shadow:inset 0px 1px 3px 0px #91b8b3;
-    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-    background-color:#768d87;
-    border-radius:5px;
-    border:1px solid #566963;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-size:15px;
-    padding:11px;margin-top:10px;
-    width: 40%;
-}
-.prevnextbutton:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
-}
-.prevnextbutton:active {
-	position:relative;
-}
-
-.todaybutton {
-    box-shadow:inset 0px 1px 3px 0px pink;
-    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-    background-color:#768d87;
-    border-radius:5px;
-    border:1px solid #566963;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-size:15px;
-    padding:11px;margin-top:10px;
-    text-decoration:none;
-    width: 15%;
-}
-.todaybutton:hover {
-	background:linear-gradient(to bottom, #DB81A8 5%, #DB81A8 100%);
-	background-color:#DB81A8;
-}
-.todaybutton:active {
-	position:relative;
-}
-       
-input[type=text],select {
-    width: 5em;
-    padding: 10px;
-    margin: 10px;
-    box-sizing: border-box;  
-    font-size:.7em;
-}
-
-.datejumper {
-    margin-left: 20%;
-    width: 75%;
-}
->>>>>>> e398c88e3ee1f41c6412872f4b661c0220b057f4
      
